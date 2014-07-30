@@ -10,7 +10,7 @@ def MFiles = new MFilesREST([
         MFLogin : [Username : 'SomeUser',
                 Password : 'SomePassword',
                 Winuser : true,                 //set to true if you are using windows logon, false if m-files
-                Domain : 'SomeWindowsDomain',   //only need to specify this if Winuser=true
+                Domain : 'SomeWindowsDomain',   //only need to specify this if Winuser=true.  NOTE - if Winuser=false, set this to an empty string ('')
                 VaultGUID : '{'+ MFVault +'}',
                 //Expiration : expirationDate.format('MM/dd/yyyy')  <-- I haven't had much luck with this yet
         ]
